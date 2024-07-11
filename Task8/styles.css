@@ -1,0 +1,106 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar-custom {
+    border-bottom: 2px solid #928560;
+    /* Gold border */
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.icon-row {
+    display: flex;
+    align-items: left;
+
+
+
+}
+
+.icon-row .icon {
+    margin-left: 15px;
+    position: right;
+
+}
+
+#wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar-wrapper {
+    min-width: 60px;
+    max-width: 50px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+}
+
+.toggled #sidebar-wrapper {
+    margin-left: -250px;
+}
+
+.card-body {
+    position: relative;
+    text-align: center;
+
+
+}
+
+.badge {
+    position: left;
+    bottom: 10px;
+    right: 10px;
+}
+
+.content {
+    margin-left: 80px;
+    padding: 20px;
+}
+
+.card {
+    margin-bottom: 60px;
+    border-radius: 30px;
+
+    overflow: hidden;
+
+}
+
+.card-body {
+    position: relative;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+h5 {
+    font-weight: bold;
+
+}
+
+.text-muted {
+    font-size: 0.875rem;
+    display: block;
+    margin-top: 0.25rem;
+}
+
+
+.align-items-left {
+    margin-left: 10px;
+}
+
+.icon-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.icon-right i {
+    cursor: pointer;
+}
