@@ -1,0 +1,93 @@
+/* styles.css */
+
+/* Style the user list container */
+#user-list {
+  margin-top: 20px;
+}
+
+/* Style individual user items */
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.list-group-item:hover {
+  background-color: #f8f9fa;
+}
+
+/* Style the buttons */
+.btn-light {
+  background-color: transparent;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-light:hover {
+  background-color: #e9ecef;
+}
+
+/* Eye icon */
+.fas.fa-eye {
+  color: #007bff;
+}
+
+/* User Details Page */
+#user-details {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+#user-details p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+#user-details p strong {
+  color: #333;
+}
+
+#user-details h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+
+.list-group-item span {
+  flex-grow: 1;
+}
+
+.list-group-item .btn-light {
+  margin-left: auto;
+}
+
+.w3-bar {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.w3-button {
+  margin: 0 5px;
+}
+
+.w3-button[disabled] {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
