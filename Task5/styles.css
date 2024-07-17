@@ -1,0 +1,117 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+   
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+   
+   
+}
+
+.left {
+    width: 70%;
+    padding: 20px;
+}
+
+.right {
+    width: 30%;
+    background: #332b75;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.section {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.section h2 {
+    color: #085e56;
+    margin-bottom: 10px;
+    
+}
+
+.contact-info p, .education p, .languages p {
+    margin: 5px 0;
+    text-align: left;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.skill-bar {
+    display: flex;
+    align-items:left;
+    margin-bottom: 10px;
+}
+
+.skill-bar span {
+    width: 100px;
+}
+
+.bar {
+    background: #ddd;
+    border-radius: 25px;
+    width: 100%;
+    margin-left: 10px;
+    position: relative;
+}
+
+.bar::after {
+    content: '';
+    background: #7064d7;
+    height: 100%;
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.html-css .bar::after {
+    width: 90%;
+}
+
+.css .bar::after{
+    width: 80%;
+}
+
+.cpp .bar::after {
+    width: 70%;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.experience-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.experience-item h3, .experience-item p {
+    margin: 0;
+}
+
+.experience-item .date {
+    color: #888;
+}
+
+.contact-info i, .education i, .languages i {
+    margin-right: 10px;
+}
