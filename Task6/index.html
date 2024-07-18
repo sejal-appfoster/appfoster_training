@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="form-section">
+            <h3 class="section-title">Primary Details</h3>
+            <div class="form-group">
+                <label for="medicareNo">Medicare No</label>
+                <input type="text" id="medicareNo" style="width: 100px; margin-left: 85px;">
+                <pre><b>/</b></pre>
+                <input type="box" id="t1">
+                <label for="validTill" style="width: 90px; margin-left: 20px;">Valid Till</label>
+                <input type="month" id="validTill" placeholder="mm/yyyy" style="width: 90px;">
+            </div>
+            <div class="form-group">
+                <label for="title">Title</label>
+                <select id="title" style="width: 80px;">
+                    <option>None</option>
+                    <option>Mr</option>
+                    <option>Ms</option>
+                    <option>Mrs</option>
+                    <option>Dr</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="name" style="width: 200px; ">Name</label>
+                <input type="text" id="name" placeholder="Lastname, Firstname, Middle">
+            </div>
+            <div class="form-group">
+                <label for="prefName">Pref. Name</label>
+                <input type="text" id="prefName">
+            </div>
+            <div class="form-group">
+                <label for="dob">DOB</label>
+                <input type="date" id="dob">
+            </div>
+            <div class="form-group">
+                <label>Sex</label>
+                <input type="radio" id="male" name="sex" value="male" style="margin-left: 30px;">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="sex" value="female" style="margin-left: 10px;">
+                <label for="female">Female</label>
+            </div>
+            <div class="form-group">
+                <label for="familyName">Family Name</label>
+                <input type="text" id="familyName" style="width: 300px;">
+            </div>
+        </div>
+        <div class="form-section">
+            <h3 class="section-title">Contact Details</h3>
+            <div class="form-group">
+                <label for="homePhone">Home</label>
+                <input type="text" id="homePhone">
+                <label for="workPhone" style="margin-left: 10px;">Work</label>
+                <input type="text" id="workPhone">
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile</label>
+                <input type="text" id="mobile">
+                <label for="fax" style="margin-left: 10px;">Fax</label>
+                <input type="text" id="fax">
+            </div>
+            <div class="form-group">
+                <label for="nextOfKin">Next of Kin</label>
+                <input type="text" id="nextOfKin">
+                <label for="nextOfKinPhone" style="margin-left: 10px;">Next of Kin Ph</label>
+                <input type="text" id="nextOfKinPhone">
+            </div>
+            <div class="form-group">
+                <label for="emergNo">Emerg. No</label>
+                <input type="text" id="emergNo">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email">
+            </div>
+        </div>
+        <div class="form-section">
+            <h3 class="section-title">Address Details</h3>
+            <div class="address-group">
+                <label for="resAddress1"><b>Residential Address</b></label><br>
+
+                <label>Address 1</label>
+                <input type="text" id="resAddress1">
+                <label for="">Address 2</label>
+                <input type="text" id="resAddress2">
+                <div class="form-group">
+                    <label>Suburb</label>
+                    <input type="text" id="mailSuburb" tyle="margin-right: 45px;">
+                    <label>State</label>
+                    <select id="mailState">
+                        <option>VIC</option>
+                        <option>NSW</option>
+                        <option>QLD</option>
+                        <option>WA</option>
+                        <option>SA</option>
+                        <option>TAS</option>
+                        <option>ACT</option>
+                        <option>NT</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Postal Code</label>
+                    <input type="text" id="mailPostalCode" style="margin-left: 10px;">
+                    <label>Country</label>
+                    <input type="text" id="mailCountry" value="AUSTRALIA" disabled>
+                </div>
+            </div>
+
+            <hr>
+            <label><b>Single Address</b></label>
+            <div class="form-group">
+                <label>Are Mailing Address and Residential Address same?</label>
+                <input type="checkbox" id="sameAddress">
+            </div>
+            <hr>
+            <div class="address-group">
+                <label for="mailAddress1"><b>Mailing Address</b></label><br>
+                <label>Address 1</label>
+                <input type="text" id="mailAddress1">
+                <label>Address 2</label>
+                <input type="text" id="mailAddress2">
+                <div class="form-group">
+                    <label>Suburb</label>
+                    <input type="text" id="mailSuburb" tyle="margin-right: 45px;">
+                    <label>State</label>
+                    <select id="mailState">
+                        <option>VIC</option>
+                        <option>NSW</option>
+                        <option>QLD</option>
+                        <option>WA</option>
+                        <option>SA</option>
+                        <option>TAS</option>
+                        <option>ACT</option>
+                        <option>NT</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Postal Code</label>
+                    <input type="text" id="mailPostalCode" style="margin-left: 10px;">
+                    <label>Country</label>
+                    <input type="text" id="mailCountry" value="AUSTRALIA" disabled>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="form-section">
+
+            <div class="form-group">
+                <label for="ihiNumber">IHI Number</label>
+                80036 <input type="text" id="ihiNumber" value="">
+            </div>
+            <div class="form-group">
+                <label for="numberStatus">Number Status</label>
+                <input type="text" id="numberStatus">
+            </div>
+            <div class="form-group">
+                <label for="recordStatus">Record Status</label>
+                <input type="text" id="recordStatus">
+            </div>
+            <div class="form-group">
+                <label for="lastUpdated">Last Updated</label>
+                <input type="date" id="lastUpdated">
+            </div>
+        </div>
+        <div class="button-group">
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+        </div>
+    </div>
+</body>
+
+</html>
