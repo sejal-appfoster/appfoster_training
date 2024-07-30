@@ -19,12 +19,12 @@
                     @endif
                 </div>
                 <div class="form-group">
-                    <label>Description</label>
-                    <textarea class="form-control" name="description" row="4"
-                    value="{{ old('description',$product->description)}}"
-                    ></textarea>
+                <label>Description</label>
+                <textarea class="form-control" name="description" rows="4">
+                    {{ old('description', $product->description) }}
+                </textarea>
                     @if($errors->has('description'))
-                    <span class="text-danger">{{ $errors->first('description')}}</span>
+                        <span class="text-danger">{{ $errors->first('description')}}</span>
                     @endif
                 </div>
 

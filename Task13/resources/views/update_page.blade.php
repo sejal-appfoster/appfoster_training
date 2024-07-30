@@ -11,7 +11,7 @@
     <h3>Update Page</h3> 
 
 
-    <form action="{{url('update',$employes->id)}}" method="post" nctype="multipart/form-data" >
+    <form action="{{url('update',$employes->id)}}" method="post" enctype="multipart/form-data" >
         
         @csrf
 

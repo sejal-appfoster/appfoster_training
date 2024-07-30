@@ -23,8 +23,13 @@
         <td>{{$loop->index+1}}</td>
         <td>
           <a href="products/{{$product->name}}/show"  class="text-dark" >{{ $product ->name}}</a></td>
-        <td><img src="products/{{$product->image}}" class="rounded-circle"
-        width="30" height="30" />
+        <td>
+          @if($product->image) 
+            <img src="products/{{$product->image}}" class="rounded-circle"
+          width="30" height="30" />
+          @else
+            <span>N/A</span>
+          @endif
         </td>
         <td>
             
